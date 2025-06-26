@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Graphik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-page{
+    background-color: whitesmoke;
+    flex:10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.main-page img{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.main-page form{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.input-box{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box a{
+    text-decoration: none;
+    color: #333;
+}
+
+.input-box a:hover{
+    color: #612DC3;
+    transition: 1s;
+}
+
+.input-box label{
+    font-weight: bold;
+}
+
+
+.input-box input{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.input-box input::placeholder{
+    text-align: center;
+}
+
+
+
+
+.button-box button{
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+
+    background-color: #612DC3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(108, 99, 255, 0.2);
+    
+}
+
+.button-box button:hover{
+    
+    background-color: white;
+    color: #612DC3;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+
+
+footer{
+    background-color: #612DC3;
+    flex:2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer p{
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer img{
+    height: 80px;
+    width: auto;
+
+    margin-top: 20px;
+}

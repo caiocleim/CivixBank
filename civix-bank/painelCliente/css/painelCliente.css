@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Graphik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #612DC3;
+    height: 160px;
+    width: 100%;
+    position: fixed;
+}
+
+.up-header{
+    height: 70%;
+    width: 100%;
+    
+}
+
+.sair{
+    text-decoration: none;
+    color: white;
+
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+
+}
+
+.up-header img{
+    height: 70px;
+    width: auto;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.541);
+
+    border-radius: 50%;
+}
+
+.down-header{
+    height: auto;
+    width: 100%;
+}
+
+.down-header p{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.body-page{
+    height: auto;
+    width: 100%;
+}
+
+.label-conta{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.label-conta p{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.saldo-conta{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.saldo-conta p{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.icons-page{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.062);
+}
+
+.icons-page img{
+    height: 50px;
+    width: auto;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.062);
+    border-radius: 50%;
+}
+
+.icon{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icon:hover{
+    color:#612DC3;
+    transition: 1s;
+}
+
+
+.blank-space{
+    height: 160px;
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #612DC3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-inferior img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.icon-inferior img:hover{
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.164);
+    transition: 1s;
+}
+
+.icon-inferior a{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}

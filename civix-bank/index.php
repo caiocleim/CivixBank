@@ -11,15 +11,15 @@
 
     <img src="./img/logo-civix-bank.png" alt="">
 
-        <form action="" method="post">
+        <form action="./scripts/script-login.php" method="post">
             <div class="input-box">
                 <label>Conta*</label>
-                <input type="text" placeholder="Digite o Nº da conta...">
+                <input type="text" name="conta" placeholder="Digite o Nº da conta...">
             </div>
 
             <div class="input-box">
                 <label>Senha da Conta*</label>
-                <input type="password" placeholder="Digite a senha...">
+                <input type="password" name="senha" placeholder="Digite a senha...">
             </div>
 
             <div class="input-box">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="button-box">
-                <button>Acessar</button> 
+                <button type="submit">Acessar</button> 
                 <!-- alterar depois -->
             </div>
             

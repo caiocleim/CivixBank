@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,7 +22,7 @@
 
         </div>
         <div class="down-header">
-            <p>Olá, [Cliente]!</p>
+            <p>Olá, <?php echo $_SESSION['nome_completo'];?>!</p>
         </div>
         <a class="sair" href="../index.php">Sair</a>
     </header>
@@ -29,7 +34,7 @@
             </div>
 
             <div class="saldo-conta">
-                <p>R$ 1.543,00</p>
+                <p>R$ <?php echo $_SESSION['saldo_conta']; ?></p>
             </div>
 
             <div class="icons-page">

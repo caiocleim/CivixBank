@@ -18,6 +18,17 @@ header{
     position: fixed;
 }
 
+.tipoConta{
+    text-decoration: none;
+    color: white;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .up-header{
     height: 70%;
     width: 100%;

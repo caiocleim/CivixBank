@@ -21,6 +21,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if($senha_digitada == $usuario_dados['senha_hash']){
             $permissao = TRUE;
             $id_usuario = $usuario_dados['id'];
+
+            switch($usuario_dados['tipo_conta']){
+                case 'poupanca':
+                    $_SESSION['tipo_conta_num'] = 1;
+                    break;
+                case 'corrente':
+                    $_SESSION['tipo_conta_num'] = 2;
+                    break;
+                case 'salario':
+                    $_SESSION['tipo_conta_num'] = 3;
+                    break;
+            }
         }else{
             echo "<script>alert('Senha Incorreta!');
             window.location.href = '../index.php';
@@ -55,6 +67,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_SESSION['email'] = $dadosCompletos['email'];
         $_SESSION['saldo_conta'] = $dadosCompletos['saldo_conta'];
         $_SESSION['ativo'] = $dadosCompletos['ativo'];
+
+        $_SESSION['sessao-logada'] = TRUE;
+
 
         header("Location: ../painelCliente/painelCliente.php");
     }

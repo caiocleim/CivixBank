@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/06/2025 às 03:12
+-- Tempo de geração: 30/06/2025 às 01:26
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,8 +44,9 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `usuario_id`, `cpf`, `nome_completo`, `data_nascimento`, `telefone`, `email`, `saldo_conta`, `ativo`) VALUES
-(2, 2, '47704951882', 'caio henrique de sousa cleim', '2001-01-12', '33998099491', 'example@hotmail.com', 25.45, 1),
-(3, 3, '65432198756', 'Wagner Cleim', '2005-01-21', '6564325644', 'example@hotmail.com', 546.90, 1);
+(2, 2, '47704951882', 'caio henrique de sousa cleim', '2001-01-12', '33998099491', 'example@hotmail.com', 20.45, 1),
+(3, 3, '65432198756', 'Wagner Cleim', '2005-01-21', '6564325644', 'example@hotmail.com', 135.00, 1),
+(4, 4, '12345678912', 'Franciele Cardoso da Silva', '2000-10-30', '3365498762', 'franciele@example.com', 6895.65, 1);
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,8 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`id`, `num_conta`, `senha_hash`, `tipo_conta`, `data_cadastro`) VALUES
 (2, '2321', '1234', 'poupanca', '2025-06-26 21:37:07'),
-(3, '5658', '1234', 'corrente', '2025-06-26 22:10:03');
+(3, '5658', '1234', 'corrente', '2025-06-26 22:10:03'),
+(4, '6345', '1234', 'poupanca', '2025-06-28 18:57:29');
 
 --
 -- Índices para tabelas despejadas
@@ -95,13 +97,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para tabelas despejadas
